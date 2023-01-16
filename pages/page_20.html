@@ -14,14 +14,29 @@
             <ion-icon name="home-outline"></ion-icon>
         </a>
 
-        <h1 id="title">¡Hola!!</h1>
+        <h1 id="title">Casi calculadora</h1>
         <form id="form" class="form_html" action="">
-            <label for="name">
-                <span>Dinos tu nombre</span>
-                <input name="name" type="text" required />
-                <button type="submit">Enviar</button>
+            <label for="numero_1">
+                <span>Escribe un numero 1</span>
+                <input name="numero_1" type="number" required />
             </label>
+            <label for="numero_2">
+                <span>Escribe un numero 2</span>
+                <input name="numero_2" type="number" required />
+            </label>
+            <label for="operacion">
+                <span>Operación</span>
+                <select name="operacion" required>
+                    <option value="suma">Suma</option>
+                    <option value="resta" selected>Resta</option>
+                    <option value="multiplicacion">Multiplicacion</option>
+                    <option value="division">Division</option>
+                </select>
+            </label>
+            <button type="submit">Enviar</button>
         </form>
+
+        <p id="response"></p>
 
         <script src="../scripts/page_20.js"></script>
         <script

@@ -3,13 +3,13 @@
 let form = document.getElementById('form');
 let response = document.getElementById('response');
 
-const user = 'Jeisson';
-const pass = 117;
+const user = 'bit';
+const pass = '2023';
 
 form.addEventListener('submit', (event) => {
     event.preventDefault();
 
-    form.user.value === user && Number(form.password.value) === pass
+    form.user.value === user && form.password.value === pass
         ? location.assign('./pages/main.html')
         : (response.innerHTML = 'Upss... Datos incorrectos');
 });
